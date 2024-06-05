@@ -1,0 +1,39 @@
+//sitemap
+
+#pages{
+    height: 200px;
+    background-color: var(--sand);
+        color: var(--mutedBlue);
+        border-radius: 10px;
+        margin: 10px 42px;
+        
+
+        a{
+            display: flex;
+            color: var(--mutedBlue);
+            font-size: 20px;
+            margin: 13px;
+        }
+        #home_link{
+            display: block;
+        }
+        
+}
+#footer{
+    height: 200px;
+    background-color: var(--sand);
+        color: var(--mutedBlue);
+        border-radius: 10px;
+        margin: 10px 42px;
+    h2{
+        font-size: 30px;
+        margin: 13px;
+        padding-bottom: 4px;
+    }
+    a{
+        display: flex;
+        color: var(--mutedBlue);
+        font-size: 20px;
+        margin: 13px;
+    }
+}
