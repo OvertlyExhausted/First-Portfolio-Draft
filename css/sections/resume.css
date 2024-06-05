@@ -1,0 +1,19 @@
+/* =============
+    Resume
+============= */
+#resume_header {
+  background-color: var(--mutedNavy);
+  border: 2px solid var(--mutedNavy);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+#resume_header h1 {
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mustard);
+}

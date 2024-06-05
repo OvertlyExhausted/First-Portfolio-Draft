@@ -13,6 +13,16 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --navy: #010D24;
+  --mutedNavy: #192233;
+  --mustard: #FDC787;
+  --sand: #FDEEC3;
+  --mutedBlue: #143B66;
+  --paleBlue: #A5C5CC;
+  --skyBlue: #2197BD;
+  --rose: #be80a4;
+  --gold: #ffc37a;
+  --brown: #6d4831;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -334,6 +344,30 @@ template {
 /* =============
     Typography
 ============= */
+h1 {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: bold;
+}
+
+h3 {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* =============
     Buttons
 ============= */
@@ -363,6 +397,501 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+header h1 {
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header_hero {
+  background-color: var(--navy);
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  border: 1px solid var(--mutedBlue);
+  background-color: var(--mutedBlue);
+  background-size: cover;
+  height: 250px;
+}
+footer #nav ul {
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30vw;
+  margin: 20px -15px;
+}
+@media (min-width: 768px) {
+  footer #nav ul {
+    margin: 25px 200px 10px;
+  }
+}
+footer #nav ul li {
+  list-style-type: none;
+}
+footer #nav ul li a {
+  color: var(--mustard);
+  font-size: 25px;
+  padding: 10px 10px;
+}
+@media (min-width: 768px) {
+  footer #nav ul li a {
+    padding: 20px 40px;
+  }
+}
+footer #nav ul li a i {
+  font-size: 30px;
+}
+footer h5 {
+  color: var(--brown);
+  margin: 25px 20px 4px 32px;
+  font-size: 20px;
+}
+footer #extraLinks ul {
+  height: 60px;
+  margin: 15px 10px;
+}
+footer #extraLinks ul li {
+  color: var(--mustard);
+  padding: 4px;
+}
+footer #extraLinks ul li a {
+  color: var(--mustard);
+  padding: auto 5px;
+}
+
+#Index_hero {
+  border: 1px solid var(--navy);
+  background-color: var(--navy);
+  background-size: cover;
+  color: var(--mustard);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4 4px 1fr;
+  grid-template-columns: 4 1fr;
+  gap: 4px;
+  -ms-grid-rows: auto 4px auto 4px auto;
+      grid-template-areas: "quote quote quote quote" "img . . ." "link . . .";
+}
+#Index_hero h1 {
+  padding-top: 32px;
+  padding: 32px 16px 4px;
+  font-size: 49px;
+}
+#Index_hero h3 {
+  text-align: right;
+  margin: 10px 60px 60px;
+  font-size: 2em;
+  color: var(--paleBlue);
+}
+#Index_hero img {
+  image-orientation: right;
+}
+#Index_hero #quote {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: quote;
+}
+#Index_hero #img {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+#Index_hero #link {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: link;
+  margin-left: 250px;
+  padding-bottom: 16px;
+  font-size: 23px;
+}
+
+#Philosophy {
+  border: 1px solid var(--navy);
+  background-image: url("../img/Irish Sunset.jpg");
+  -webkit-filter: brightness(53%);
+          filter: brightness(53%);
+  display: cover;
+  background-position: center top;
+  height: 1125px;
+}
+#Philosophy div {
+  margin: 10px;
+}
+@media (min-width: 768px) {
+  #Philosophy div {
+    margin: 55px 250px auto 16px;
+  }
+}
+#Philosophy div h2 {
+  text-align: center;
+  color: var(--rose);
+  font-size: 35px;
+  margin: 90px auto auto 16px;
+}
+#Philosophy div h5 {
+  text-align: center;
+  margin: 25px 4px;
+  color: var(--gold);
+  font-weight: bold;
+  line-height: 30px;
+  -webkit-filter: brightness(109%);
+          filter: brightness(109%);
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  #Philosophy div h5 {
+    margin: 25px auto;
+  }
+}
+
+#gallery {
+  background: var(--navy);
+  text-align: center;
+  color: var(--paleBlue);
+  height: 90vh;
+  border: 16px solid var(--navy);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ()[2 1fr];
+  grid-template-columns: repeat(2 1fr);
+      grid-template-areas: "title title" "p1 p2" "p1 p2" "exp video";
+}
+#gallery div h5 {
+  color: var(--brown);
+  font-size: 25px;
+  margin: 23px auto 20px 42px;
+}
+#gallery div ul {
+  color: var(--mustard);
+}
+#gallery div ul li {
+  padding: 12px 4px;
+  list-style-type: none;
+}
+#gallery div ul li a {
+  color: var(--mustard);
+  font-size: 20px;
+}
+#gallery #title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  font-size: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 55px;
+}
+#gallery #p1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: p1;
+}
+#gallery #p2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: p2;
+}
+
+#video {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". video .";
+}
+#video .window_wrapper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: video;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+#video .window_wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#photography {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  -ms-grid-columns: ;
+  grid-template-columns: repeat(2 1fr);
+  margin: 16px;
+  -ms-grid-rows: auto 16px auto 16px auto;
+      grid-template-areas: "title title" "p1 p3" "p2 p3";
+}
+#photography img {
+  width: 100%;
+  height: auto;
+}
+#photography #p1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: p1;
+}
+#photography #p2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: p2;
+}
+#photography #p3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: p3;
+}
+#photography #title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+  color: var(--navy);
+}
+
+/* =============
+    Contact
+============= */
+#contact_hero {
+  background-image: url("../img/20190322_183534_IMG_1289.JPG");
+  background-size: cover;
+  height: 130vh;
+  background-position: center center;
+}
+#contact_hero h5 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+#contact_hero #contact_email {
+  background-color: var(--sand);
+  color: var(--mutedBlue);
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px 42px;
+  margin-top: 200px;
+}
+#contact_hero #contact_email a {
+  color: var(--mutedBlue);
+}
+@media (min-width: 768px) {
+  #contact_hero #contact_email {
+    margin: 200px 150px 10px 150px;
+  }
+}
+#contact_hero #contact_phone {
+  background-color: var(--sand);
+  color: var(--mutedBlue);
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px 42px;
+}
+@media (min-width: 768px) {
+  #contact_hero #contact_phone {
+    margin: 10px 150px auto 150px;
+  }
+}
+#contact_hero #faux_header {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+
+/* =============
+    About
+============= */
+#about_header {
+  background-color: var(--mutedNavy);
+  border: 2px solid var(--mutedNavy);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+#about_header h1 {
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mustard);
+}
+
+#about_intro {
+  background-color: var(--mutedNavy);
+  color: var(--mustard);
+  border: 2px solid var(--mutedNavy);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ;
+  grid-template-columns: repeat(2 1fr);
+  gap: 16px;
+  -ms-grid-rows: auto 16px auto;
+      grid-template-areas: "name photo" "interest photo";
+}
+#about_intro img {
+  height: 200px;
+  margin-right: 16px;
+}
+#about_intro h5 {
+  margin: 16px;
+  font-size: 19px;
+}
+#about_intro #name {
+  grid-area: intro;
+}
+#about_intro #interest {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: interest;
+}
+#about_intro #photo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: photo;
+}
+
+#unusual_skills {
+  background-color: var(--mutedNavy);
+  border: 2px solid var(--mutedNavy);
+}
+#unusual_skills h1 {
+  color: var(--brown);
+  text-align: center;
+}
+#unusual_skills ul li h5 {
+  color: var(--mustard);
+  font-size: 19px;
+  margin-right: 16px;
+}
+
+/* =============
+    About
+============= */
+#associations_header {
+  background-color: var(--mutedNavy);
+  border: 2px solid var(--mutedNavy);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+#associations_header h1 {
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mustard);
+}
+
+#associations {
+  height: 800px;
+  background-color: var(--mutedNavy);
+  color: var(--mustard);
+  border: 16px solid var(--mutedNavy);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ;
+  grid-template-columns: repeat(2 1fr);
+  gap: 16px;
+  -ms-grid-rows: auto 16px auto;
+      grid-template-areas: "ALA IIETA" "WIAA Academia";
+}
+@media (min-width: 768px) {
+  #associations {
+    height: 500px;
+  }
+}
+#associations a {
+  color: var(--brown);
+}
+#associations #ALA {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ALA;
+}
+#associations #IIETA {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: IIETA;
+}
+#associations #WIAA {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: WIAA;
+}
+#associations #Academia {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: Academia;
+}
+
+/* =============
+    Resume
+============= */
+#resume_main {
+  background-color: var(--navy);
+  height: 110vh;
+  text-align: center;
+}
+#resume_main #resume_header {
+  background-color: var(--mutedNavy);
+  border: 2px solid var(--mutedNavy);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+#resume_main #resume_header h1 {
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mustard);
+}
+@media (min-width: 768px) {
+  #resume_main {
+    height: 95vh;
+  }
+}
+#resume_main a {
+  color: var(--mustard);
+  font-size: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#resume_main object {
+  padding-bottom: 20px;
+}

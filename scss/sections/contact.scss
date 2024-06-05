@@ -1,0 +1,56 @@
+/* =============
+    Contact
+============= */
+#contact_hero{
+
+        background-image: url("../img/20190322_183534_IMG_1289.JPG");
+        background-size: cover;
+        height: 130vh;
+        background-position: center center;
+
+        h5{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        
+
+    #contact_email{
+        
+        background-color: var(--sand);
+        color: var(--mutedBlue);
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px 42px;
+        margin-top: 200px;
+
+        a{
+            color: var(--mutedBlue);
+        }
+
+        @include md{
+            margin: 200px 150px 10px 150px;
+        }
+    }
+    #contact_phone{
+
+        background-color: var(--sand);
+        color: var(--mutedBlue);
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px 42px;
+
+        @include md{
+            margin: 10px 150px auto 150px;
+        }
+       
+    }
+
+    #faux_header{
+        padding: 10px;
+        display: flex;
+        gap: 6px;
+    }
+    
+
+}

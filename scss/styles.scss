@@ -19,4 +19,8 @@
 @import "layout/_footer";
 
 // Sections Styles
-@import "index";
+@import "sections/index";
+@import "sections/contact";
+@import "sections/about.scss";
+@import "sections/associations.scss";
+@import "sections/resume";

@@ -1,0 +1,68 @@
+/* =============
+    About
+============= */
+#about_header{
+    background-color: var(--mutedNavy);
+    border: 2px solid var(--mutedNavy);
+    padding: 10px;
+    display: flex;
+    gap: 6px;
+    h1{
+        font-size: 35px;
+        justify-content: center;
+        color: var(--mustard);
+    }
+}
+#about_intro{
+    
+    background-color: var(--mutedNavy);
+    color: var(--mustard);
+    border: 2px solid var(--mutedNavy);
+
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    gap: 16px;
+    grid-template-areas: 
+    "name photo"
+    "interest photo";
+    
+    img{
+        height: 200px;
+        margin-right: 16px;
+    }
+    h5{
+        margin: 16px;
+        font-size: 19px;
+    }
+
+    #name{
+        grid-area: intro;
+    }
+    #interest{
+        grid-area: interest;
+    }
+    #photo{
+        grid-area: photo;
+    }
+
+}
+
+#unusual_skills{
+    background-color: var(--mutedNavy);
+    border: 2px solid var(--mutedNavy);
+
+    h1{
+        color: var(--brown);
+        text-align: center;
+    }
+    ul{
+        li{
+            h5{
+                color: var(--mustard);
+                font-size: 19px;
+                margin-right: 16px;
+            }
+        }
+    }
+
+}

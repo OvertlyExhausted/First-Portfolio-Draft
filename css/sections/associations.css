@@ -1,0 +1,52 @@
+/* =============
+    About
+============= */
+#associations_header {
+  background-color: var(--mutedNavy);
+  border: 2px solid var(--mutedNavy);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+#associations_header h1 {
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--mustard);
+}
+
+#associations {
+  background-color: var(--mutedNavy);
+  color: var(--mustard);
+  border: 2px solid var(--mutedNavy);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ;
+  grid-template-columns: repeat(2 1fr);
+  gap: 16px;
+  -ms-grid-rows: auto 16px auto;
+      grid-template-areas: "ALA IIETA" "WIAA Academia";
+}
+#associations #ALA {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ALA;
+}
+#associations #IIETA {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: IIETA;
+}
+#associations #WIAA {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: WIAA;
+}
+#associations #Academia {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: Academia;
+}

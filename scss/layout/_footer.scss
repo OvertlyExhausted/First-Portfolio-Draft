@@ -1,3 +1,61 @@
 /* =============
     Footer
 ============= */
+footer{
+    border: 1px solid var(--mutedBlue);
+    background-color: var(--mutedBlue);
+    background-size: cover;
+    height: 250px;
+    #nav{
+      ul{
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        width: 30vw;
+        margin: 20px -15px;
+
+        @include md{
+          margin: 25px 200px 10px;
+        }
+        
+        li{
+            list-style-type: none;
+            a{
+            color: var(--mustard);
+            font-size: 25px;
+            padding: 10px 10px;
+            @include md{
+              padding: 20px 40px; 
+            }
+
+               i{
+                font-size: 30px;
+               }
+            }
+        }
+    }
+    }
+    h5{
+      color: var(--brown);
+      margin: 25px 20px 4px 32px;
+      font-size: 20px;
+    }
+
+    #extraLinks{
+      ul{
+        height: 60px;
+        margin: 15px 10px;
+       
+        li{
+          color: var(--mustard);
+          padding: 4px;
+          a{
+            color: var(--mustard);
+            padding: auto 5px;
+          }
+        }
+      }
+    }
+
+
+}
