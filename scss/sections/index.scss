@@ -159,25 +159,25 @@
             grid-template-columns: repeat(2 1fr);
             margin: 16px;
             grid-template-areas: 
-            "title title"
-            "p1 p3"
-            "p2 p3";
+            "subtitle subtitle"
+            "photo1 photo3"
+            "photo2 photo3";
 
             img{
                 width: 100%;
                 height: auto;
             }
-            #p1{
-                grid-area: p1;
+            #photo1{
+                grid-area: photo1;
             }
-            #p2{
-                grid-area: p2;
+            #photo2{
+                grid-area: photo2;
             }
-            #p3{
-                grid-area: p3;
+            #photo3{
+                grid-area: photo3;
             }
-            #title{
-                grid-area: title;
+            #subtitle{
+                grid-area: subtitle;
                 color: var(--navy);
             }
 
