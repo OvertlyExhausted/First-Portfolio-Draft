@@ -32,7 +32,6 @@
         }
     }
     img{
-        image-orientation: right;
         width: 30vw;
         margin-left: 230px;
 
@@ -75,7 +74,6 @@
     border: 1px solid var(--navy);
     background-image: url("../img/Irish Sunset.jpg");
     filter: brightness(53%);
-    display: cover;
     background-position: center top;
     height: 1125px;
 

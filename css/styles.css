@@ -353,7 +353,6 @@ h1 {
 h2 {
   font-family: "Zen Maru Gothic", serif;
   font-weight: 400;
-  font-style: bold;
 }
 
 h3 {
@@ -422,11 +421,11 @@ footer {
   border: 1px solid var(--mutedBlue);
   background-color: var(--mutedBlue);
   background-size: cover;
-  height: 480px;
+  height: 500px;
 }
 @media (min-width: 768px) {
   footer {
-    height: 250px;
+    height: 300px;
   }
 }
 footer #nav ul {
@@ -511,7 +510,6 @@ footer #extraLinks ul li a {
   }
 }
 #Index_hero img {
-  image-orientation: right;
   width: 30vw;
   margin-left: 230px;
 }
@@ -562,7 +560,6 @@ footer #extraLinks ul li a {
   background-image: url("../img/Irish Sunset.jpg");
   -webkit-filter: brightness(53%);
           filter: brightness(53%);
-  display: cover;
   background-position: center top;
   height: 1125px;
 }
