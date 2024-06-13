@@ -422,21 +422,27 @@ footer {
   border: 1px solid var(--mutedBlue);
   background-color: var(--mutedBlue);
   background-size: cover;
-  height: 250px;
+  height: 480px;
+}
+@media (min-width: 768px) {
+  footer {
+    height: 250px;
+  }
 }
 footer #nav ul {
-  height: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 30vw;
-  margin: 20px -15px;
+  height: 280px;
+  line-height: 35px;
 }
 @media (min-width: 768px) {
   footer #nav ul {
+    height: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 30vw;
     margin: 25px 200px 10px;
   }
 }
@@ -446,7 +452,7 @@ footer #nav ul li {
 footer #nav ul li a {
   color: var(--mustard);
   font-size: 25px;
-  padding: 10px 10px;
+  padding: 10px;
 }
 @media (min-width: 768px) {
   footer #nav ul li a {
@@ -479,46 +485,76 @@ footer #extraLinks ul li a {
   background-color: var(--navy);
   background-size: cover;
   color: var(--mustard);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 4 4px 1fr;
-  grid-template-columns: 4 1fr;
-  gap: 4px;
-  -ms-grid-rows: auto 4px auto 4px auto;
-      grid-template-areas: "quote quote quote quote" "img . . ." "link . . .";
 }
 #Index_hero h1 {
-  padding-top: 32px;
-  padding: 32px 16px 4px;
-  font-size: 49px;
+  margin: 32px 18px 4px 16px;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  #Index_hero h1 {
+    padding-top: 32px;
+    padding: 32px 16px 4px;
+    font-size: 49px;
+  }
 }
 #Index_hero h3 {
-  text-align: right;
-  margin: 10px 60px 60px;
-  font-size: 2em;
+  text-align: left;
+  margin: 10px 30vw 60px;
+  font-size: 1em;
   color: var(--paleBlue);
+}
+@media (min-width: 768px) {
+  #Index_hero h3 {
+    text-align: right;
+    margin-right: 16px;
+    font-size: 3em;
+  }
 }
 #Index_hero img {
   image-orientation: right;
+  width: 30vw;
+  margin-left: 230px;
+}
+@media (min-width: 768px) {
+  #Index_hero img {
+    display: block;
+    margin-left: 75px;
+  }
+}
+@media (min-width: 768px) {
+  #Index_hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4 4px 1fr;
+    grid-template-columns: 4 1fr;
+    gap: 4px;
+    -ms-grid-rows: auto 4px auto 4px auto;
+        grid-template-areas: "quote quote quote quote" "img . . ." "link . . .";
+  }
 }
 #Index_hero #quote {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
   grid-area: quote;
 }
 #Index_hero #img {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: img;
+  grid-area: sigil;
+  height: 600vh;
 }
 #Index_hero #link {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   grid-area: link;
   margin-left: 250px;
   padding-bottom: 16px;
   font-size: 23px;
+}
+@media (min-width: 768px) {
+  #Index_hero #quote {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+  }
+  #Index_hero #link {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
 }
 
 #Philosophy {
@@ -643,35 +679,33 @@ footer #extraLinks ul li a {
   grid-template-columns: repeat(2 1fr);
   margin: 16px;
   -ms-grid-rows: auto 16px auto 16px auto;
-      grid-template-areas: "title title" "p1 p3" "p2 p3";
+      grid-template-areas: "subtitle subtitle" "photo1 photo3" "photo2 photo3";
 }
 #photography img {
   width: 100%;
   height: auto;
 }
-#photography #p1 {
+#photography #photo1 {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
   -ms-grid-column: 1;
-  grid-area: p1;
+  grid-area: photo1;
 }
-#photography #p2 {
+#photography #photo2 {
   -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
   -ms-grid-column: 1;
-  grid-area: p2;
+  grid-area: photo2;
 }
-#photography #p3 {
+#photography #photo3 {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
   -ms-grid-column: 3;
-  grid-area: p3;
+  grid-area: photo3;
 }
-#photography #title {
+#photography #subtitle {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
-  grid-area: title;
+  grid-area: subtitle;
   color: var(--navy);
 }
 
@@ -894,4 +928,44 @@ footer #extraLinks ul li a {
 }
 #resume_main object {
   padding-bottom: 20px;
+}
+
+#pages {
+  height: 200px;
+  background-color: var(--sand);
+  color: var(--mutedBlue);
+  border-radius: 10px;
+  margin: 10px 42px;
+}
+#pages a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--mutedBlue);
+  font-size: 20px;
+  margin: 13px;
+}
+#pages #home_link {
+  display: block;
+}
+
+#footer {
+  height: 200px;
+  background-color: var(--sand);
+  color: var(--mutedBlue);
+  border-radius: 10px;
+  margin: 10px 42px;
+}
+#footer h2 {
+  font-size: 30px;
+  margin: 13px;
+  padding-bottom: 4px;
+}
+#footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--mutedBlue);
+  font-size: 20px;
+  margin: 13px;
 }
