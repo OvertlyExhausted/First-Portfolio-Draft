@@ -486,13 +486,13 @@ footer #extraLinks ul li a {
   color: var(--mustard);
 }
 #Index_hero h1 {
-  margin: 32px 18px 4px 16px;
+  margin: 40px 60px 4px 16px;
   font-size: 20px;
 }
 @media (min-width: 768px) {
   #Index_hero h1 {
     padding-top: 32px;
-    padding: 32px 16px 4px;
+    padding: 32px 16px 10px;
     font-size: 49px;
   }
 }
@@ -504,8 +504,7 @@ footer #extraLinks ul li a {
 }
 @media (min-width: 768px) {
   #Index_hero h3 {
-    text-align: right;
-    margin-right: 16px;
+    margin-right: 36px;
     font-size: 3em;
   }
 }
@@ -517,21 +516,25 @@ footer #extraLinks ul li a {
   #Index_hero img {
     display: block;
     margin-left: 75px;
+    padding-top: 46px;
   }
 }
 @media (min-width: 768px) {
   #Index_hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 4 4px 1fr;
-    grid-template-columns: 4 1fr;
+    -ms-grid-columns: 3 4px 1fr;
+    grid-template-columns: 3 1fr;
     gap: 4px;
-    -ms-grid-rows: auto 4px auto 4px auto;
-        grid-template-areas: "quote quote quote quote" "img . . ." "link . . .";
+    -ms-grid-rows: auto 4px auto 4px auto 4px auto;
+        grid-template-areas: "quote quote quote" ". . author" "img . . " "link . . ";
   }
 }
 #Index_hero #quote {
   grid-area: quote;
+}
+#Index_hero #author {
+  grid-area: author;
 }
 #Index_hero #img {
   grid-area: sigil;
@@ -547,10 +550,14 @@ footer #extraLinks ul li a {
   #Index_hero #quote {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
+    -ms-grid-column-span: 5;
+  }
+  #Index_hero #author {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
   }
   #Index_hero #link {
-    -ms-grid-row: 5;
+    -ms-grid-row: 7;
     -ms-grid-column: 1;
   }
 }

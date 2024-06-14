@@ -9,12 +9,12 @@
     
 
     h1{
-        margin: 32px 18px 4px 16px;
+        margin: 40px 60px 4px 16px;
         font-size: 20px;
 
         @include md{
             padding-top: 32px;
-            padding: 32px 16px 4px;
+            padding: 32px 16px 10px;
             font-size: 49px;
         }
     }
@@ -25,8 +25,8 @@
         color: var(--paleBlue);
 
         @include md{
-            text-align: right;
-            margin-right: 16px;
+            //text-align: right;
+            margin-right: 36px;
             font-size: 3em;
 
         }
@@ -38,17 +38,19 @@
         @include md{
             display: block;
             margin-left: 75px;
+            padding-top: 46px;
         }
     }
 
     @include md{
   display: grid;
-    grid-template-columns: (4 1fr);
+    grid-template-columns: (3 1fr);
     gap: 4px;
     grid-template-areas: 
-    "quote quote quote quote"
-    "img . . ."
-    "link . . .";
+    "quote quote quote"
+    ". . author"
+    "img . . "
+    "link . . ";
 
     }
 
@@ -56,6 +58,9 @@
 
     #quote{
         grid-area: quote;
+    }
+    #author{
+        grid-area: author;
     }
     #img{
         grid-area: sigil;
